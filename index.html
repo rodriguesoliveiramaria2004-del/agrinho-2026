@@ -4,4 +4,145 @@
 <body>
 <title> site agrinho </title>
 </body>
+<html>
+  vlog-agro/
+├── index.html
+├── style.css
+└── script.js
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte - Futuro Sustentável</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+    <p>Veja a rotina do agricultor em um dia na fazenda</p>
+    <a href="#rotina" class="btn">Entrar no Vlog</a>
+  </header>
+
+  <section id="rotina" class="grid">
+
+    <div class="card">
+      <h2>🌅 Amanhecer</h2>
+      <p>O dia começa cedo com o sol nascendo na fazenda.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚜 Preparando o solo</h2>
+      <p>Trator trabalhando e terra sendo preparada para o plantio.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌱 Plantio</h2>
+      <p>Sementes sendo plantadas com cuidado e tecnologia.</p>
+    </div>
+
+    <div class="card">
+      <h2>💧 Irrigação</h2>
+      <p>Água chegando na lavoura para fortalecer o crescimento.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌾 Colheita</h2>
+      <p>Hora de colher os frutos do trabalho no campo.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌙 Final do dia</h2>
+      <p>Descanso merecido após um dia produtivo na fazenda.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>🌎 Agro Forte - Valorizando o campo e o futuro sustentável</p>
+  </footer>
+
+</body>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #a8e063, #56ab2f);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1b5e20, #66bb6a);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #ffeb3b;
+  color: #2e7d32;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+}
+  document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    card.style.transform = "scale(1.1)";
+    setTimeout(() => {
+      card.style.transform = "scale(1)";
+    }, 200);
+  });
+});
+  .
 </html>
+
+  
